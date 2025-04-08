@@ -3,6 +3,29 @@ platform darwin -- Python 3.8.12, pytest-8.3.5, pluggy-1.5.0
 rootdir: /Users/martingarces/Desktop/UdeC/2025-1/Testing/Testing_tarea_1
 collected 1 item
 
-test_ohce.py .                                                           [100%]
+test_ohce.py F                                                           [100%]
 
-============================== 1 passed in 0.00s ===============================
+=================================== FAILURES ===================================
+_____________________________________ test _____________________________________
+
+    def test():
+        x = Kata("Martin")
+    
+        resultado = x.input("Hola")
+    
+        assert resultado == "aloH"
+    
+        resultado = x.input("como")
+    
+>       assert resultado == "omoc"
+E       AssertionError: assert 'Adios Martin' == 'omoc'
+E         
+E         - omoc
+E         + Adios Martin
+
+test_ohce.py:12: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Hola Martin
+=========================== short test summary info ============================
+FAILED test_ohce.py::test - AssertionError: assert 'Adios Martin' == 'omoc'
+============================== 1 failed in 0.01s ===============================
