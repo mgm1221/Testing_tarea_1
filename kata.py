@@ -1,6 +1,7 @@
 class Kata:
-    def __init__(name):
+    def __init__(self,name):
         self.name = name
+        print("Hola " + self.name)
     
     def input(self,message):
-        pass
+        return "Adios " + self.name
