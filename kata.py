@@ -7,6 +7,7 @@ class Kata:
         if message != "Stop!":
             if message == "Hola":
                 return "aloH"
+            
             return "omoc"
         else:
             return "Adios " + self.name
