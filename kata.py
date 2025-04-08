@@ -4,5 +4,7 @@ class Kata:
         print("Hola " + self.name)
     
     def input(self,message):
-        
-        return "Adios " + self.name
+        if message == "Hola!":
+            return "aloH"
+        else:
+            return "Adios " + self.name
