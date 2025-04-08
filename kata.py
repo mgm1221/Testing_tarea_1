@@ -5,10 +5,6 @@ class Kata:
     
     def input(self,message):
         if message != "Stop!":
-            if message == "Hola":
-                return "aloH"
-            elif message == "numero":
-                return "oremun"
-            return "omoc"
+            return message[::-1]
         else:
             return "Adios " + self.name
