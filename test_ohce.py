@@ -14,3 +14,7 @@ def test():
     resultado = x.input("Stop!")
 
     assert resultado == "Adios Martin"
+
+    resultado = x.input("numero")
+
+    assert resultado == "oremun"
